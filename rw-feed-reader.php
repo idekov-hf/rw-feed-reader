@@ -14,7 +14,6 @@ function get_latest_timestamp() {
 
 function update() {
 	$latest_timestamp = get_latest_timestamp();
-	update_option( 'last_build_timestamp', '1' );
 	$last_timestamp = get_option( 'last_build_timestamp' );
 
 	if ( false == $last_timestamp  ) {
